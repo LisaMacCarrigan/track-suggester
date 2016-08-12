@@ -1,6 +1,6 @@
 # _Track Suggester_
 
-#### _{Brief description of application}, 08.12.2016_
+#### _Epicodus track suggester for aspiring programmers, 08.12.2016_
 
 #### By _**Lisa MacCarrigan**_
 
