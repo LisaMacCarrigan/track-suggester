@@ -7,13 +7,107 @@
     <title>Epicodus Track Suggester</title>
   </head>
   <body>
-    <div class="container">
-    <h1>Welcome to the Epicodus Track Suggester<h1>
-    <h4>This <em>Track Suggester</em> will ask you a series of questions and will provide a track suggestion based on your answers. <strong>Let's begin!</strong></h4>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container header"><h1>Epicodus Track Suggester</h1>
+      </div>
+    </nav>
 
+    <div class="container">
+      <h3>Welcome to <span class="emphasize">Epicodus Track Suggester</span>. Please fill out <span class="emphasize">all</span> of the questions below. Based on your answers, an <span class="emphasize">Epicodus</span> track will be suggested.</h3>
+      <form id="questions">
+        <label for="name" type="text" value="name"><h4>What is your name?</h4></label>
+        <input id="name" class="form-control" placeholder="Enter Your Name Here">
+
+        <div class="form-group">
+          <h4>QUESTION ONE</h4>
+          <div class="radio">
+            <label for="q1-c1">
+              <input id="q1-c1" type="radio" name="question1" value="agree">Agree
+            </label>
+          </div>
+          <div class="radio">
+            <label for="q1-c2">
+              <input id="q1-c2" type="radio" name="question1" value="disagree">Disagree
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h4>QUESTION TWO</h4>
+          <div class="radio">
+            <label for="q2-c1">
+              <input id="q2-c1" type="radio" name="question2" value="agree">Agree
+            </label>
+          </div>
+          <div class="radio">
+            <label for="q2-c2">
+              <input id="q2-c2" type="radio" name="question2" value="disagree">Disagree
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h4>QUESTION THREE</h4>
+          <div class="radio">
+            <label for="q3-c1">
+              <input id="q3-c1" type="radio" name="question3" value="agree">Agree
+            </label>
+          </div>
+          <div class="radio">
+            <label for="q3-c2">
+              <input id="q3-c2" type="radio" name="question3" value="disagree">Disagree
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h4>QUESTION FOUR</h4>
+          <div class="radio">
+            <label for="q4-c1">
+              <input id="q4-c1" type="radio" name="question4" value="agree">Agree
+            </label>
+          </div>
+          <div class="radio">
+            <label for="q4-c2">
+              <input id="q4-c2" type="radio" name="question4" value="disagree">Disagree
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h4>QUESTION FIVE</h4>
+          <div class="radio">
+            <label for="q5-c1">
+              <input id="q5-c1" type="radio" name="question5" value="agree">Agree
+            </label>
+          </div>
+          <div class="radio">
+            <label for="q5-c2">
+              <input id="q5-c2" type="radio" name="question5" value="disagree">Disagree
+            </label>
+          </div>
+
+        <div class="form-group">
+          <h4>QUESTION SIX</h4>
+          <div class="radio">
+            <label for="q6-c1">
+              <input id="q6-c1" type="radio" name="question6" value="agree">Agree
+            </label>
+          </div>
+          <div class="radio">
+            <label for="q6-c2">
+              <input id="q6-c2" type="radio" name="question6" value="disagree">Disagree
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn">Suggest a track!</button>
+      </form>
+      <div class="outcome">
+      </div>
     </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

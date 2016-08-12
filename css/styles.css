@@ -1,3 +1,14 @@
-h1, h4 {
-  font-family: helvetica, sans-serif;
+body {
+  padding-top: 100px;
+}
+
+.container.header {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.emphasize, h4 {
+  color: #00b3b4;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
 }
