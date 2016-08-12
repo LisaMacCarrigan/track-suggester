@@ -16,11 +16,16 @@
       <h3>Welcome to <span class="emphasize">Epicodus Track Suggester</span>. Please fill out <span class="emphasize">all</span> of the questions below. Based on your answers, an <span class="emphasize">Epicodus</span> track will be suggested.</h3>
       <hr></hr>
       <form id="questions">
-        <label for="name" type="text" value="name"><h4>What is your name?</h4></label>
-        <input id="name" class="form-control" placeholder="Enter Your Name Here">
+        <div class="form-group">
+          <label for="name" type="text" value="name"><h4>What is your name?</h4></label>
+          <input id="name" class="form-control" placeholder="Enter Your Name Here">
+          <div>
+            <p id="entername"></p>
+          </div>
+        </div>
 
         <div class="form-group">
-          <h4>QUESTION ONE</h4>
+          <h4>Developing the back-end of software to address the business needs of a large company does not really interest me.</h4>
           <div class="radio">
             <label for="q1-c1">
               <input id="q1-c1" type="radio" name="question1" value="agree">Agree
@@ -34,7 +39,7 @@
         </div>
 
         <div class="form-group">
-          <h4>QUESTION TWO</h4>
+          <h4>I can see myself building interactive web and/or mobile applications.</h4>
           <div class="radio">
             <label for="q2-c1">
               <input id="q2-c1" type="radio" name="question2" value="agree">Agree
@@ -48,7 +53,7 @@
         </div>
 
         <div class="form-group">
-          <h4>QUESTION THREE</h4>
+          <h4>Using back-end programming languages to develop complex web and/or mobile tools sounds terrible.</h4>
           <div class="radio">
             <label for="q3-c1">
               <input id="q3-c1" type="radio" name="question3" value="agree">Agree
@@ -62,7 +67,7 @@
         </div>
 
         <div class="form-group">
-          <h4>QUESTION FOUR</h4>
+          <h4>I consider myself centered on visual design.</h4>
           <div class="radio">
             <label for="q4-c1">
               <input id="q4-c1" type="radio" name="question4" value="agree">Agree
@@ -76,7 +81,7 @@
         </div>
 
         <div class="form-group">
-          <h4>QUESTION FIVE</h4>
+          <h4>Making sure that information is presented effectively is important to me.</h4>
           <div class="radio">
             <label for="q5-c1">
               <input id="q5-c1" type="radio" name="question5" value="agree">Agree
@@ -90,7 +95,7 @@
         </div>
 
         <div class="form-group">
-          <h4>QUESTION SIX</h4>
+          <h4>Engineering the way that data gets sent out to a browser is not something I want to do.</h4>
           <div class="radio">
             <label for="q6-c1">
               <input id="q6-c1" type="radio" name="question6" value="agree">Agree
