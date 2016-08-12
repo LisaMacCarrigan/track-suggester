@@ -3,7 +3,6 @@ var introCourse = "Intro to Programming"; //Required Level 1, 1st course
 var cSharp = "C#"; // Level 2
 var javaScript = "JavaScript"; // Level 2
 var dotNet = ".NET"; // Level 3
-var php = "PHP"; // Level 2
 var ruby = "Ruby"; // Level 2
 var rails = "Rails"; // Level 3
 var css = "CSS"; // Level 2
@@ -13,7 +12,6 @@ var introCourseImg = $("#introCourse");
 var cSharpImg = $("#cSharp");
 var javaScriptImg = $("#javaScript");
 var dotNetImg = $("#dotNet");
-var phpImg = $("#php");
 var rubyImg = $("#ruby");
 var railsImg = $("#rails");
 var cssImg = $("#css");
@@ -89,7 +87,7 @@ $(document).ready(function() {
       $(".outcome").text("Based on your responses, " + name + ", it appears that your interests are evenly spread among design, front-end, and back-end development, so you would likely benefit from any Epicodus track!");
     }
     else if (trackIndex < middle && trackIndex < -2) {
-      $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + cSharp + ", " + javaScript + ", and " + dotNet + ". " + "Following this course sequence, you would complete an Internship.");
+      $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + cSharp + ", " + javaScript + ", and " + dotNet + ". " + "Following this C#/.NET track, you would complete an Internship.");
       introCourseImg.show();
       cSharpImg.show();
       javaScriptImg.show();
@@ -97,15 +95,15 @@ $(document).ready(function() {
       internshipImg.show();
     }
     else if (trackIndex > middle && trackIndex > 2) {
-      $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + php + ", " + css + ", and " + design + ". " + "Following this course sequence, you would complete an Internship.");
+      $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + javaScript + ", " + css + ", and " + design + ". " + "Following this CSS/Design track, you would complete an Internship.");
       introCourseImg.show();
-      phpImg.show();
+      javaScriptImg.show();
       cssImg.show();
       designImg.show();
       internshipImg.show();
     }
     else {
-      $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + ruby + ", " + javaScript + ", and " + rails + ". " + "Following this course sequence, you would complete an Internship.");
+      $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + ruby + ", " + javaScript + ", and " + rails + ". " + "Following this Ruby/Rails track, you would complete an Internship.");
       introCourseImg.show();
       rubyImg.show();
       javaScriptImg.show();
