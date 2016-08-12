@@ -9,10 +9,21 @@ var rails = "Rails"; // Level 3
 var css = "CSS"; // Level 2
 var design = "Design"; // Level 3
 
+var introCourseImg = $("#introCourse");
+var cSharpImg = $("#cSharp");
+var javaScriptImg = $("#javaScript");
+var dotNetImg = $("#dotNet");
+var phpImg = $("#php");
+var rubyImg = $("#ruby");
+var railsImg = $("#rails");
+var cssImg = $("#css");
+var designImg = $("#design");
+
 // User Interface Logic
 $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
+    $(".imgs").children().hide();
     var name = $("input#name").val();
     var trackIndex = 0;
     var middle = 0;
@@ -25,10 +36,6 @@ $(document).ready(function() {
     var question5 = $("input:radio[name=question5]:checked").val();
     var question6 = $("input:radio[name=question6]:checked").val();
 
-    // if (name == "") {
-    //   alert("Please enter your name");
-    //   // $("#entername").text("Please enter your name.");
-    // }
     if (name == "") {
       $("#entername").text("Please enter your name.");
     }
@@ -77,18 +84,26 @@ $(document).ready(function() {
 
 
 // Outcome displayed on page
-    if (trackIndex < middle && trackIndex < -3) {
+    if (trackIndex < middle && trackIndex < -2) {
       $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + cSharp + ", " + javaScript + ", and " + dotNet + ". " + "Following this course sequence, you would complete an Internship.");
-      // Show and image id that is related, hide non-related if necessary
+      introCourseImg.show();
+      cSharpImg.show();
+      javaScriptImg.show();
+      dotNetImg.show();
     }
-
-    else if (trackIndex > middle && trackIndex > 3) {
+    else if (trackIndex > middle && trackIndex > 2) {
       $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + php + ", " + css + ", and " + design + ". " + "Following this course sequence, you would complete an Internship.");
-      // Show and image id that is related, hide non-related if necessary
+      introCourseImg.show();
+      phpImg.show();
+      cssImg.show();
+      designImg.show();
     }
     else {
       $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + ruby + ", " + javaScript + ", and " + rails + ". " + "Following this course sequence, you would complete an Internship.");
-      // Show and image id that is related, hide non-related if necessary
+      introCourseImg.show();
+      rubyImg.show();
+      javaScriptImg.show();
+      railsImg.show();
     }
 
   });
