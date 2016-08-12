@@ -4,11 +4,21 @@ body {
 
 .container.header {
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: helvetica, sans-serif;
 }
 
 .emphasize, h4 {
   color: #00b3b4;
   font-weight: bold;
-  font-family: "Open Sans", sans-serif;
+  font-family: helvetica, sans-serif;
+}
+
+#entername {
+  font-weight: bold;
+  color: red;
+}
+
+.outcome {
+  padding: 10px;
+  font-size: 1.5em;
 }

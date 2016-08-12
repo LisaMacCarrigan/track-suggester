@@ -30,68 +30,65 @@ $(document).ready(function() {
     //   // $("#entername").text("Please enter your name.");
     // }
     if (name == "") {
-     $("#entername").text("Please enter your name.");
+      $("#entername").text("Please enter your name.");
     }
 
     if (question1 === "agree") {
-     trackIndex++;
+      trackIndex++;
     }
     else {
-     trackIndex--;
+      trackIndex--;
     }
 
     if (question2 === "agree") {
-     trackIndex++;
+      trackIndex++;
     }
     else {
-     trackIndex--;
+      trackIndex--;
     }
 
     if (question3 === "agree") {
-     trackIndex++;
+      trackIndex++;
     }
     else {
-     trackIndex--;
+      trackIndex--;
     }
 
     if (question4 === "agree") {
-     trackIndex++;
+      trackIndex++;
     }
     else {
-     trackIndex--;
+      trackIndex--;
     }
 
     if (question5 === "agree") {
-     trackIndex++;
+      trackIndex++;
     }
     else {
-     trackIndex--;
+      trackIndex--;
     }
 
     if (question6 === "agree") {
-     trackIndex++;
+      trackIndex++;
     }
     else {
-     trackIndex--;
+      trackIndex--;
     }
 
 
 // Outcome displayed on page
+    if (trackIndex < middle && trackIndex < -3) {
+      $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + cSharp + ", " + javaScript + ", and " + dotNet + ". " + "Following this course sequence, you would complete an Internship.");
+      // Show and image id that is related, hide non-related if necessary
+    }
 
-    if (trackIndex < middle && trackIndex > ) {
-      $(".outcome").text("Based on your responses " + name + ", you might want to consider taking " + introCourse + ", " + cSharp + ", " + javaScript + ", and " + dotNet + ". " + "Following this course sequence, you would complete an Internship.");
-      // Show and image id that is related, hide non-related if necessary
-    }
-    else if (trackIndex < middle && trackIndex > -3) {
-      $(".outcome").text("Based on your responses " + name + ", you might want to consider taking " + introCourse + ", " + ruby + ", " + javaScript + ", and " + rails + ". " + "Following this course sequence, you would complete an Internship.");
-      // Show and image id that is related, hide non-related if necessary
-    }
-    else if (trackIndex > middle) {
-      $(".outcome").text("Based on your responses " + name + ", you might want to consider taking " + introCourse + ", " + php + ", " + css + ", and " + design + ". " + "Following this course sequence, you would complete an Internship.");
+    else if (trackIndex > middle && trackIndex > 3) {
+      $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + php + ", " + css + ", and " + design + ". " + "Following this course sequence, you would complete an Internship.");
       // Show and image id that is related, hide non-related if necessary
     }
     else {
-
+      $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + ruby + ", " + javaScript + ", and " + rails + ". " + "Following this course sequence, you would complete an Internship.");
+      // Show and image id that is related, hide non-related if necessary
     }
 
   });
