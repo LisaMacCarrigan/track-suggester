@@ -1,10 +1,14 @@
+// Business Logic
+var introCourse = "Intro to Programming" //Required Level 1, 1st course
+var internship = "Internship" // Required Internship, final course
 
-// UI Logic
-
+// User Interface Logic
 $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
     var name = $("input#name").val();
+    var trackIndex = 0;
+    var
 
 
     $("input:radio[name=question1]:checked").val();
@@ -13,6 +17,11 @@ $(document).ready(function() {
     var question4 = $("input:radio[name=question4]:checked").val();
     var question5 = $("input:radio[name=question5]:checked").val();
     var question6 = $("input:radio[name=question6]:checked").val();
+
+    if (name == "") {
+      $(".outcome").text("Please enter your name to get your results.");
+    }
+
 
 
   });
