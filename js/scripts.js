@@ -1,6 +1,13 @@
 // Business Logic
-var introCourse = "Intro to Programming" //Required Level 1, 1st course
-var internship = "Internship" // Required Internship, final course
+var introCourse = "Intro to Programming"; //Required Level 1, 1st course
+var cSharp = "C#"; // Level 2
+var javaScript = "JavaScript"; // Level 2
+var dotNet = ".NET"; // Level 3
+var php = "PHP"; // Level 2
+var ruby = "Ruby"; // Level 2
+var rails = "Rails"; // Level 3
+var css = "CSS"; // Level 2
+var design = "Design"; // Level 3
 
 // User Interface Logic
 $(document).ready(function() {
@@ -8,7 +15,7 @@ $(document).ready(function() {
     event.preventDefault();
     var name = $("input#name").val();
     var trackIndex = 0;
-    var
+    var middle = 0;
 
 
     $("input:radio[name=question1]:checked").val();
@@ -22,7 +29,19 @@ $(document).ready(function() {
       $(".outcome").text("Please enter your name to get your results.");
     }
 
+// Outcome displayed on page
+    if (trackIndex < middle && trackIndex > ) {
+      $(".outcome").text("Based on your responses " + name + ", you might want to consider taking " + introCourse + ", " + cSharp + ", " + javaScript + ", and " + dotNet + "." + "Following this course sequence, you would complete an Internship.");
+    }
+    else if (trackIndex < middle && trackIndex > -3) {
+      $(".outcome").text("Based on your responses " + name + ", you might want to consider taking " + introCourse + ", " + ruby + ", " + javaScript + ", and " + rails + "." + "Following this course sequence, you would complete an Internship.");
+    }
+    else if (trackIndex > middle) {
+      $(".outcome").text("Based on your responses " + name + ", you might want to consider taking " + introCourse + ", " + php + ", " + css + ", and " + design + "." + "Following this course sequence, you would complete an Internship.");
+    }
+    else {
 
+    }
 
   });
 });
