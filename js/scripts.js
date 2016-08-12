@@ -18,6 +18,7 @@ var rubyImg = $("#ruby");
 var railsImg = $("#rails");
 var cssImg = $("#css");
 var designImg = $("#design");
+var internshipImg = $("#internship");
 
 // User Interface Logic
 $(document).ready(function() {
@@ -84,12 +85,16 @@ $(document).ready(function() {
 
 
 // Outcome displayed on page
-    if (trackIndex < middle && trackIndex < -2) {
+    if (trackIndex === middle) {
+      $(".outcome").text("Based on your responses, " + name + ", it appears that your interests are evenly spread among design, front-end, and back-end development, so you would likely benefit from any Epicodus track!");
+    }
+    else if (trackIndex < middle && trackIndex < -2) {
       $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + cSharp + ", " + javaScript + ", and " + dotNet + ". " + "Following this course sequence, you would complete an Internship.");
       introCourseImg.show();
       cSharpImg.show();
       javaScriptImg.show();
       dotNetImg.show();
+      internshipImg.show();
     }
     else if (trackIndex > middle && trackIndex > 2) {
       $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + php + ", " + css + ", and " + design + ". " + "Following this course sequence, you would complete an Internship.");
@@ -97,6 +102,7 @@ $(document).ready(function() {
       phpImg.show();
       cssImg.show();
       designImg.show();
+      internshipImg.show();
     }
     else {
       $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + ruby + ", " + javaScript + ", and " + rails + ". " + "Following this course sequence, you would complete an Internship.");
@@ -104,6 +110,7 @@ $(document).ready(function() {
       rubyImg.show();
       javaScriptImg.show();
       railsImg.show();
+      internshipImg.show();
     }
 
   });
