@@ -79,7 +79,6 @@ $(document).ready(function() {
       trackIndex--;
     }
 
-
 // Outcome displayed on page
     if (trackIndex === middle) {
       $(".outcome").text("Based on your responses, " + name + ", it appears that your interests are evenly spread among design, front-end, and back-end development, so you would likely benefit from any Epicodus track!");
@@ -108,6 +107,5 @@ $(document).ready(function() {
       railsImg.show();
       internshipImg.show();
     }
-
   });
 });
