@@ -26,7 +26,6 @@ $(document).ready(function() {
     var trackIndex = 0;
     var middle = 0;
 
-    $("input:radio[name=question1]:checked").val();
     var question1 = $("input:radio[name=question1]:checked").val();
     var question2 = $("input:radio[name=question2]:checked").val();
     var question3 = $("input:radio[name=question3]:checked").val();
@@ -85,7 +84,7 @@ $(document).ready(function() {
     if (trackIndex === middle) {
       $(".outcome").text("Based on your responses, " + name + ", it appears that your interests are evenly spread among design, front-end, and back-end development, so you would likely benefit from any Epicodus track!");
     }
-    else if (trackIndex < middle && trackIndex < -2) {
+    else if (trackIndex < -2) {
       $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + cSharp + ", " + javaScript + ", and " + dotNet + ". " + "Following this C#/.NET track, you would complete an Internship.");
       introCourseImg.show();
       cSharpImg.show();
@@ -93,7 +92,7 @@ $(document).ready(function() {
       dotNetImg.show();
       internshipImg.show();
     }
-    else if (trackIndex > middle && trackIndex > 2) {
+    else if (trackIndex > 2) {
       $(".outcome").text("Based on your responses, " + name + ", you might want to consider taking " + introCourse + ", " + javaScript + ", " + css + ", and " + design + ". " + "Following this CSS/Design track, you would complete an Internship.");
       introCourseImg.show();
       javaScriptImg.show();
