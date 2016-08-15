@@ -1,28 +1,27 @@
-// Global variables
-var introCourse = "Intro to Programming"; //Required Level 1, 1st course
-var cSharp = "C#"; // Level 2
-var javaScript = "JavaScript"; // Level 2
-var dotNet = ".NET"; // Level 3
-var ruby = "Ruby"; // Level 2
-var rails = "Rails"; // Level 3
-var css = "CSS"; // Level 2
-var design = "Design"; // Level 3
-
-var introCourseImg = $("#introCourse");
-var cSharpImg = $("#cSharp");
-var javaScriptImg = $("#javaScript");
-var dotNetImg = $("#dotNet");
-var rubyImg = $("#ruby");
-var railsImg = $("#rails");
-var cssImg = $("#css");
-var designImg = $("#design");
-var internshipImg = $("#internship");
-
 // User Interface Logic
 $(document).ready(function() {
   $("form#questions").submit(function(event) {
     event.preventDefault();
     $(".imgs").children().hide();
+    var introCourse = "Intro to Programming"; //Required Level 1, 1st course
+    var cSharp = "C#"; // Level 2
+    var javaScript = "JavaScript"; // Level 2
+    var dotNet = ".NET"; // Level 3
+    var ruby = "Ruby"; // Level 2
+    var rails = "Rails"; // Level 3
+    var css = "CSS"; // Level 2
+    var design = "Design"; // Level 3
+    //Images
+    var introCourseImg = $("#introCourse");
+    var cSharpImg = $("#cSharp");
+    var javaScriptImg = $("#javaScript");
+    var dotNetImg = $("#dotNet");
+    var rubyImg = $("#ruby");
+    var railsImg = $("#rails");
+    var cssImg = $("#css");
+    var designImg = $("#design");
+    var internshipImg = $("#internship");
+
     var name = $("input#name").val();
     var trackIndex = 0;
     var middle = 0;
